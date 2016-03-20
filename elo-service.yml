@@ -4,7 +4,7 @@ spring:
   cloud:
     stream:
       bindings:
-        input: elo
+        input: players
 just:
   a:
     test: my test property
