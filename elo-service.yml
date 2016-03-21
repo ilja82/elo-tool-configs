@@ -16,7 +16,7 @@ spring:
     stream:
       bindings:
         input:
-          durableSubscription = true
+          durableSubscription: true
 just:
   a:
     test: my test property
