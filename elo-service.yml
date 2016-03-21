@@ -5,6 +5,18 @@ spring:
     stream:
       bindings:
         input: players
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          group: players
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          durableSubscription = true
 just:
   a:
     test: my test property
