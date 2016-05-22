@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:9996}
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: games
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
