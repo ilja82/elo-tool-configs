@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:9998}
+zuul:
+  prefix: /api
+  routes:
+    player-service:
+      path: /player-service/**
+      serviceId: player-service
+    game-service:
+      path: /game-service/**
+      serviceId: game-service
+    static:
+      path: /static/**
